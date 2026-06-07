@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #4b0082;
+    color: #ffdd00;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container p {
+    color: #4b0082;
+}
+
+.container p:hover {
+    color: #ffdd00;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #4b0082;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nome-sorveteria {
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.nome-sorveteria:hover {
+    color: #ffdd00;
+}
+
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffdd00;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    background-color: #ffdd00;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-banner h1 {
+    font-size: 2.5rem;
+    color: #4b0082;
+}
+
+.texto-banner p {
+    font-size: 1.2rem;
+    color: #4b0082;
+    margin-top: 10px;
+}
+
+/* Seções */
+.sobre, .cardapio, .bebidas, .depoimentos {
+    padding: 60px 0;
+}
+
+.sobre h2,
+.cardapio h2,
+.bebidas h2,
+.depoimentos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffdd00;
+    text-align: center;
+}
+
+.sobre p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.sobre p:hover {
+    color: #ffdd00;
+}
+
+.imagem-centralizada {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.prato {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.prato img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.prato img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(174, 0, 255);
+}
+
+.prato img:active {
+    transform: scale(0.95) rotate(-1deg);
+}
+
+.prato p {
+    margin-top: 12px;
+    color: #ffdd00;
+    font-size: 1.1rem;
+}
+
+.depoimentos {
+    background: #4b0082;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    color: #ffdd00;
+    margin-bottom: 30px;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.depoimento {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #333;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(251, 255, 0);
+    max-width: 700px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.depoimento:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(251,255,0);
+}
+
+.depoimento:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 10px rgba(251,255,0);
+}
+
+.depoimento img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.depoimento blockquote {
+    font-style: italic;
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffdd00;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #4b0082;
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: none;
+    color: #4b0082;
+}
+
+#btn-whatsapp {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#btn-whatsapp:hover {
+    background-color: #1ebe5b;
+}
+
+footer {
+    background-color: #ffdd00;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer:hover {
+    color: #4b0082;
+}
+
+.container-contato {
+    color: #4b0082;
+}
+
+/* Responsivo para tablets (768px ou menos) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nome-sorveteria {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .imagem-centralizada {
+        height: 400px;
+        width: 100%;
+    }
+
+    .texto-banner h1 {
+        font-size: 2rem;
+    }
+
+    .texto-banner p {
+        font-size: 1rem;
+    }
+
+    .prato img {
+        height: 180px;
+    }
+
+    .depoimento {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .depoimento blockquote {
+        text-align: center;
+    }
+}
+
+/* Responsivo para celulares (480px ou menos) */
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
+
+    .nome-sorveteria {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .texto-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .texto-banner p {
+        font-size: 0.9rem;
+    }
+
+    .imagem-centralizada {
+        height: 250px;
+    }
+
+    .prato img {
+        height: 150px;
+    }
+
+    #btn-whatsapp {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
