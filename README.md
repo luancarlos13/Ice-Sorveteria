@@ -48,6 +48,6 @@ Este projeto demonstra como uma landing page bem construída pode ser uma podero
 
 ## 🖇️Links
 
-Repositório:
+Repositório: https://github.com/luancarlos13/Ice-Sorveteria
 
-Deploy do Projeto: 
+Deploy do Projeto: https://luancarlos13.github.io/Ice-Sorveteria/
